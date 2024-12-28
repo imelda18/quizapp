@@ -1,32 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
-    <title>Quizz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" ></script>
 </head>
 <body>
 <div id="quiz-container">
     <h1>Quiz</h1>
     <div id="question-container">
         <p id="question-text"></p>
-        <div id="options-container">
-            <input type="radio" name="answer" id="optionA" value="A">
-            <label for="optionA" id="labelA"></label>
-
-            <input type="radio" name="answer" id="optionB" value="B">
-            <label for="optionB" id="labelB"></label>
-
-            <input type="radio" name="answer" id="optionC" value="C">
-           <label for="optionC" id="labelC"></label>
-        </div>
+        <div id="options-container"></div>
     </div>
     <button id="next-button" onclick="nextQuestion()">Next Question</button>
     <p id="result-message"></p>
 </div>
-
 <script src="script.js"></script>
 </body>
 </html>
