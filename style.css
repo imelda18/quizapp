@@ -15,8 +15,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width:60%;
-
+    width: 60%;
 }
 
 h1 {
@@ -27,14 +26,37 @@ h1 {
     margin-bottom: 20px;
 }
 
+#options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
 
+.option {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fdeadd;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
 
+.option:hover {
+    background-color: #f9d7c4;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
 
+.option input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
 
 button {
     background-color: #ef7119;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -48,4 +70,5 @@ button:hover {
 #result-message {
     font-weight: bold;
     color: #333;
+    margin-top: 20px;
 }
